@@ -55,7 +55,7 @@ let
             TelefoneSemCC = if CodigoPais <> null then Text.RemoveRange(telefoneLimpo, 0, CCPosicaoFim) else telefoneLimpo,
 
             // Extração do DDD
-            // Localiza parênteses ou assume os primeiros espaços
+            // Localiza parênteses ou assume os primeiros dois chars
             DDDInicio = Text.PositionOf(TelefoneSemCC, "("),
             DDDPosicaoFim = Text.PositionOf(TelefoneSemCC, ")"),
             DDD = 
