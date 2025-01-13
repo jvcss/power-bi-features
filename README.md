@@ -37,7 +37,7 @@ let
         in
             Resultado,
 
-    // Função para corrigir o formato de telefone para "CC (DDD) 9xxxx-xxxx"
+    // Função para corrigir o formato de telefone para "CC(DDD)9xxxx-xxxx"
     FormatarTelefone = (telefone as nullable text) as nullable text =>
         let
             // Validar se o telefone é nulo ou vazio
